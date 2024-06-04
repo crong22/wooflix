@@ -13,6 +13,9 @@
 		D85CC0EA2C0F0E0E0041E3BB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D85CC0E92C0F0E0E0041E3BB /* Base */; };
 		D85CC0EC2C0F0E100041E3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85CC0EB2C0F0E100041E3BB /* Assets.xcassets */; };
 		D85CC0EF2C0F0E100041E3BB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D85CC0EE2C0F0E100041E3BB /* Base */; };
+		D85CC0F92C0F112E0041E3BB /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CC0F82C0F112E0041E3BB /* MovieViewController.swift */; };
+		D85CC0FC2C0F12460041E3BB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D85CC0FB2C0F12460041E3BB /* SnapKit */; };
+		D8C587F32C0F7B0E00B29A81 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		D85CC0EB2C0F0E100041E3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D85CC0EE2C0F0E100041E3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D85CC0F02C0F0E100041E3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85CC0F82C0F112E0041E3BB /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85CC0FC2C0F12460041E3BB /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,8 @@
 		D85CC0E12C0F0E0E0041E3BB /* wooflix */ = {
 			isa = PBXGroup;
 			children = (
+				D85CC0F72C0F11210041E3BB /* Sign */,
+				D85CC0F62C0F11090041E3BB /* MovieList */,
 				D85CC0E22C0F0E0E0041E3BB /* AppDelegate.swift */,
 				D85CC0E42C0F0E0E0041E3BB /* SceneDelegate.swift */,
 				D85CC0E62C0F0E0E0041E3BB /* ViewController.swift */,
@@ -65,6 +73,22 @@
 				D85CC0F02C0F0E100041E3BB /* Info.plist */,
 			);
 			path = wooflix;
+			sourceTree = "<group>";
+		};
+		D85CC0F62C0F11090041E3BB /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				D85CC0F82C0F112E0041E3BB /* MovieViewController.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		D85CC0F72C0F11210041E3BB /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */,
+			);
+			path = Sign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,9 @@
 			dependencies = (
 			);
 			name = wooflix;
+			packageProductDependencies = (
+				D85CC0FB2C0F12460041E3BB /* SnapKit */,
+			);
 			productName = wooflix;
 			productReference = D85CC0DF2C0F0E0E0041E3BB /* wooflix.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +138,9 @@
 				Base,
 			);
 			mainGroup = D85CC0D62C0F0E0E0041E3BB;
+			packageReferences = (
+				D85CC0FA2C0F12460041E3BB /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D85CC0E02C0F0E0E0041E3BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +170,9 @@
 			files = (
 				D85CC0E72C0F0E0E0041E3BB /* ViewController.swift in Sources */,
 				D85CC0E32C0F0E0E0041E3BB /* AppDelegate.swift in Sources */,
+				D8C587F32C0F7B0E00B29A81 /* SignViewController.swift in Sources */,
 				D85CC0E52C0F0E0E0041E3BB /* SceneDelegate.swift in Sources */,
+				D85CC0F92C0F112E0041E3BB /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +329,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +339,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sesac.wooflix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,8 +361,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +371,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sesac.wooflix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -361,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D85CC0FA2C0F12460041E3BB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D85CC0FB2C0F12460041E3BB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85CC0FA2C0F12460041E3BB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D85CC0D72C0F0E0E0041E3BB /* Project object */;
 }
