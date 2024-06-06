@@ -16,6 +16,11 @@
 		D85CC0F92C0F112E0041E3BB /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CC0F82C0F112E0041E3BB /* MovieViewController.swift */; };
 		D85CC0FC2C0F12460041E3BB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D85CC0FB2C0F12460041E3BB /* SnapKit */; };
 		D8C587F32C0F7B0E00B29A81 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */; };
+		D8C5882C2C12322300B29A81 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5882B2C12322300B29A81 /* LottoViewController.swift */; };
+		D8C588352C123EFB00B29A81 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D8C588342C123EFB00B29A81 /* .gitignore */; };
+		D8C588372C123F0A00B29A81 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C588362C123F0A00B29A81 /* APIKey.swift */; };
+		D8C5883A2C123F9A00B29A81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D8C588392C123F9A00B29A81 /* Alamofire */; };
+		D8C5883C2C123FF800B29A81 /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5883B2C123FF800B29A81 /* Lotto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,10 @@
 		D85CC0F02C0F0E100041E3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D85CC0F82C0F112E0041E3BB /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		D8C5882B2C12322300B29A81 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		D8C588342C123EFB00B29A81 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D8C588362C123F0A00B29A81 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		D8C5883B2C123FF800B29A81 /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D85CC0FC2C0F12460041E3BB /* SnapKit in Frameworks */,
+				D8C5883A2C123F9A00B29A81 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +56,7 @@
 		D85CC0D62C0F0E0E0041E3BB = {
 			isa = PBXGroup;
 			children = (
+				D8C588342C123EFB00B29A81 /* .gitignore */,
 				D85CC0E12C0F0E0E0041E3BB /* wooflix */,
 				D85CC0E02C0F0E0E0041E3BB /* Products */,
 			);
@@ -62,6 +73,7 @@
 		D85CC0E12C0F0E0E0041E3BB /* wooflix */ = {
 			isa = PBXGroup;
 			children = (
+				D8C5882A2C12321300B29A81 /* Lotto */,
 				D85CC0F72C0F11210041E3BB /* Sign */,
 				D85CC0F62C0F11090041E3BB /* MovieList */,
 				D85CC0E22C0F0E0E0041E3BB /* AppDelegate.swift */,
@@ -71,6 +83,7 @@
 				D85CC0EB2C0F0E100041E3BB /* Assets.xcassets */,
 				D85CC0ED2C0F0E100041E3BB /* LaunchScreen.storyboard */,
 				D85CC0F02C0F0E100041E3BB /* Info.plist */,
+				D8C588362C123F0A00B29A81 /* APIKey.swift */,
 			);
 			path = wooflix;
 			sourceTree = "<group>";
@@ -91,6 +104,15 @@
 			path = Sign;
 			sourceTree = "<group>";
 		};
+		D8C5882A2C12321300B29A81 /* Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5882B2C12322300B29A81 /* LottoViewController.swift */,
+				D8C5883B2C123FF800B29A81 /* Lotto.swift */,
+			);
+			path = Lotto;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +131,7 @@
 			name = wooflix;
 			packageProductDependencies = (
 				D85CC0FB2C0F12460041E3BB /* SnapKit */,
+				D8C588392C123F9A00B29A81 /* Alamofire */,
 			);
 			productName = wooflix;
 			productReference = D85CC0DF2C0F0E0E0041E3BB /* wooflix.app */;
@@ -140,6 +163,7 @@
 			mainGroup = D85CC0D62C0F0E0E0041E3BB;
 			packageReferences = (
 				D85CC0FA2C0F12460041E3BB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D8C588382C123F9A00B29A81 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = D85CC0E02C0F0E0E0041E3BB /* Products */;
 			projectDirPath = "";
@@ -155,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C588352C123EFB00B29A81 /* .gitignore in Resources */,
 				D85CC0EC2C0F0E100041E3BB /* Assets.xcassets in Resources */,
 				D85CC0EF2C0F0E100041E3BB /* Base in Resources */,
 				D85CC0EA2C0F0E0E0041E3BB /* Base in Resources */,
@@ -168,9 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C5883C2C123FF800B29A81 /* Lotto.swift in Sources */,
 				D85CC0E72C0F0E0E0041E3BB /* ViewController.swift in Sources */,
+				D8C588372C123F0A00B29A81 /* APIKey.swift in Sources */,
 				D85CC0E32C0F0E0E0041E3BB /* AppDelegate.swift in Sources */,
 				D8C587F32C0F7B0E00B29A81 /* SignViewController.swift in Sources */,
+				D8C5882C2C12322300B29A81 /* LottoViewController.swift in Sources */,
 				D85CC0E52C0F0E0E0041E3BB /* SceneDelegate.swift in Sources */,
 				D85CC0F92C0F112E0041E3BB /* MovieViewController.swift in Sources */,
 			);
@@ -324,6 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94C5KLWYKG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wooflix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -356,6 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94C5KLWYKG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wooflix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -413,6 +443,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		D8C588382C123F9A00B29A81 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -420,6 +458,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D85CC0FA2C0F12460041E3BB /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		D8C588392C123F9A00B29A81 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8C588382C123F9A00B29A81 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
