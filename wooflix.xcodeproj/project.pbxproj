@@ -15,6 +15,8 @@
 		D85CC0EF2C0F0E100041E3BB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D85CC0EE2C0F0E100041E3BB /* Base */; };
 		D85CC0F92C0F112E0041E3BB /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CC0F82C0F112E0041E3BB /* MovieViewController.swift */; };
 		D85CC0FC2C0F12460041E3BB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D85CC0FB2C0F12460041E3BB /* SnapKit */; };
+		D88B16772C12580600E34DC5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B16762C12580600E34DC5 /* Movie.swift */; };
+		D88B16792C12584A00E34DC5 /* MovieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B16782C12584A00E34DC5 /* MovieChartViewController.swift */; };
 		D8C587F32C0F7B0E00B29A81 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */; };
 		D8C5882C2C12322300B29A81 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5882B2C12322300B29A81 /* LottoViewController.swift */; };
 		D8C588352C123EFB00B29A81 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D8C588342C123EFB00B29A81 /* .gitignore */; };
@@ -33,6 +35,8 @@
 		D85CC0EE2C0F0E100041E3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D85CC0F02C0F0E100041E3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D85CC0F82C0F112E0041E3BB /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		D88B16762C12580600E34DC5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D88B16782C12584A00E34DC5 /* MovieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieChartViewController.swift; sourceTree = "<group>"; };
 		D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		D8C5882B2C12322300B29A81 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		D8C588342C123EFB00B29A81 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 		D85CC0E12C0F0E0E0041E3BB /* wooflix */ = {
 			isa = PBXGroup;
 			children = (
+				D88B16732C1257DE00E34DC5 /* Movie */,
 				D8C5882A2C12321300B29A81 /* Lotto */,
 				D85CC0F72C0F11210041E3BB /* Sign */,
 				D85CC0F62C0F11090041E3BB /* MovieList */,
@@ -102,6 +107,15 @@
 				D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */,
 			);
 			path = Sign;
+			sourceTree = "<group>";
+		};
+		D88B16732C1257DE00E34DC5 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				D88B16762C12580600E34DC5 /* Movie.swift */,
+				D88B16782C12584A00E34DC5 /* MovieChartViewController.swift */,
+			);
+			path = Movie;
 			sourceTree = "<group>";
 		};
 		D8C5882A2C12321300B29A81 /* Lotto */ = {
@@ -197,6 +211,8 @@
 				D85CC0E72C0F0E0E0041E3BB /* ViewController.swift in Sources */,
 				D8C588372C123F0A00B29A81 /* APIKey.swift in Sources */,
 				D85CC0E32C0F0E0E0041E3BB /* AppDelegate.swift in Sources */,
+				D88B16792C12584A00E34DC5 /* MovieChartViewController.swift in Sources */,
+				D88B16772C12580600E34DC5 /* Movie.swift in Sources */,
 				D8C587F32C0F7B0E00B29A81 /* SignViewController.swift in Sources */,
 				D8C5882C2C12322300B29A81 /* LottoViewController.swift in Sources */,
 				D85CC0E52C0F0E0E0041E3BB /* SceneDelegate.swift in Sources */,

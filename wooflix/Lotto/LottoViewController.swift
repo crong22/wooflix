@@ -33,11 +33,11 @@ class LottoViewController: UIViewController {
     
     let picker = UIPickerView()
     
-    var list = ["1","2"]
+    var list : Array = ["1"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        for i in 3...2000 {
+        for i in 2...2000 {
             list.append("\(i)")
         }
         configureHierarchy()
@@ -334,7 +334,17 @@ extension LottoViewController : UIPickerViewDelegate, UIPickerViewDataSource{
                 
             case .failure(let error):
                 print(error)
-                self.resultLabel.text = "올바른 값을 입력해주세요"
+                self.numResultLabel.text = "올바른 값을 "
+                self.resultLabel.text = " 입력해주세요"
+                self.oneLabel.text = ""
+                self.twoLabel.text = ""
+                self.threeLabel.text = ""
+                self.fourLabel.text = ""
+                self.fiveLabel.text = ""
+                self.sixLabel.text = ""
+                self.bonusLabel.text = ""
+                
+                self.infoDateLabel.text = ""
             }
         }
     }
