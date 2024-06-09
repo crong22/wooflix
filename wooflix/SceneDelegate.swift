@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: scene)
         
-        let vc = LottoViewController()
+        let vc = MovieChartViewController()
         window?.rootViewController = vc // storyboard에서 entrypoint
         window?.makeKeyAndVisible()     // show
     }

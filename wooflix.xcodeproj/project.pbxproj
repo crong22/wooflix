@@ -17,6 +17,7 @@
 		D85CC0FC2C0F12460041E3BB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D85CC0FB2C0F12460041E3BB /* SnapKit */; };
 		D88B16772C12580600E34DC5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B16762C12580600E34DC5 /* Movie.swift */; };
 		D88B16792C12584A00E34DC5 /* MovieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B16782C12584A00E34DC5 /* MovieChartViewController.swift */; };
+		D88B167B2C125A2D00E34DC5 /* MovieRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B167A2C125A2D00E34DC5 /* MovieRankTableViewCell.swift */; };
 		D8C587F32C0F7B0E00B29A81 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */; };
 		D8C5882C2C12322300B29A81 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5882B2C12322300B29A81 /* LottoViewController.swift */; };
 		D8C588352C123EFB00B29A81 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D8C588342C123EFB00B29A81 /* .gitignore */; };
@@ -37,6 +38,7 @@
 		D85CC0F82C0F112E0041E3BB /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		D88B16762C12580600E34DC5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D88B16782C12584A00E34DC5 /* MovieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieChartViewController.swift; sourceTree = "<group>"; };
+		D88B167A2C125A2D00E34DC5 /* MovieRankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRankTableViewCell.swift; sourceTree = "<group>"; };
 		D8C587F22C0F7B0E00B29A81 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		D8C5882B2C12322300B29A81 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		D8C588342C123EFB00B29A81 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				D88B16762C12580600E34DC5 /* Movie.swift */,
 				D88B16782C12584A00E34DC5 /* MovieChartViewController.swift */,
+				D88B167A2C125A2D00E34DC5 /* MovieRankTableViewCell.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				D8C587F32C0F7B0E00B29A81 /* SignViewController.swift in Sources */,
 				D8C5882C2C12322300B29A81 /* LottoViewController.swift in Sources */,
 				D85CC0E52C0F0E0E0041E3BB /* SceneDelegate.swift in Sources */,
+				D88B167B2C125A2D00E34DC5 /* MovieRankTableViewCell.swift in Sources */,
 				D85CC0F92C0F112E0041E3BB /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
