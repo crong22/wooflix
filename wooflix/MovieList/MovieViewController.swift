@@ -16,7 +16,7 @@ class MovieViewController: UIViewController {
     let mainTitleLabel = UILabel()
     
     let subTitleLabel = UILabel()
-    
+         
     let subMovieOneImage = UIImageView()
     let subMovieTwoImage = UIImageView()
     let subMovieThreeImage = UIImageView()
