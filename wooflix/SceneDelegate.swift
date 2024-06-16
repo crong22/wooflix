@@ -19,7 +19,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: scene)
-        
         let vc = MovieChartViewController()
         window?.rootViewController = vc // storyboard에서 entrypoint
         window?.makeKeyAndVisible()     // show
