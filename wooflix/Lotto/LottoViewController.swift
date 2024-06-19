@@ -93,14 +93,12 @@ class LottoViewController: UIViewController {
         numResultLabel.snp.makeConstraints { make in
             make.top.equalTo(40)
             make.leading.equalTo(numView.safeAreaLayoutGuide)
-            //make.trailing.equalTo(resultLabel)
             make.width.equalTo(173)
             make.height.equalTo(50)
         }
         
         resultLabel.snp.makeConstraints { make in
             make.top.equalTo(40)
-            //make.leading.equalTo(numResultLabel)
             make.trailing.equalTo(numView.safeAreaLayoutGuide)
             make.width.equalTo(177)
             make.height.equalTo(50)
@@ -118,7 +116,6 @@ class LottoViewController: UIViewController {
             make.height.equalTo(40)
             make.width.equalTo(40)
             make.leading.equalTo(45)
-//            make.leading.equalTo(oneLabel.snp.right).offset(20)
         }
         
         threeLabel.snp.makeConstraints { make in
