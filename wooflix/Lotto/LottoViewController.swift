@@ -172,7 +172,7 @@ class LottoViewController: UIViewController {
         view.backgroundColor = .white
         
         
-        //roundTextField.backgroundColor = .white
+        
         roundTextField.borderStyle = .line
         roundTextField.layer.borderColor = UIColor.systemRed.cgColor //??
         roundTextField.inputView = picker
