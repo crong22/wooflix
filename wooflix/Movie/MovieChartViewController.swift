@@ -92,7 +92,7 @@ class MovieChartViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @objc func findButtonClicked() {
         let alert = UIAlertController(title: "오 류", message: "8자리 이하로 입력해주세요", preferredStyle: .alert)
-        let alert2 = UIAlertController(title: "오 류", message: "8자리로 입력해주세요 \n 예시) 20240606", preferredStyle: .alert)
+        let alert2 = UIAlertController(title: "오 류", message: "8자리로 입력해주세요\n 예시) 20240606", preferredStyle: .alert)
         print(dateTextField.text!.count)
         
         if dateTextField.text!.count > 8 {
