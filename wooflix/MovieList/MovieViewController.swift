@@ -56,8 +56,6 @@ class MovieViewController: UIViewController {
         subMovieThreeImage.addSubview(newLabel)
         subMovieThreeImage.addSubview(flixImage)
     }
-    
-    
     func configureLayout() {
         mainMovieView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide)
