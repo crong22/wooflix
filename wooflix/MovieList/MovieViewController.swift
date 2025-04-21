@@ -58,6 +58,7 @@ class MovieViewController: UIViewController {
     }
     
     
+    
     func configureLayout() {
         mainMovieView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide)
