@@ -44,6 +44,7 @@ class MovieChartViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     
+    
     func configureUI() {
         view.backgroundColor = .black
         mainTableView.backgroundColor = .black
