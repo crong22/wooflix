@@ -21,6 +21,7 @@ class MovieChartViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var list : MovieData?
     var moviedate = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -90,6 +91,7 @@ class MovieChartViewController: UIViewController, UITableViewDelegate, UITableVi
         mainTableView.register(MovieRankTableViewCell.self, forCellReuseIdentifier: MovieRankTableViewCell.identifier)
         
     }
+    
     
     @objc func findButtonClicked() {
         let alert = UIAlertController(title: "오 류", message: "8자리 이하로 입력해주세요", preferredStyle: .alert)
