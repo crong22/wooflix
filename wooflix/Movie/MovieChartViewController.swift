@@ -90,7 +90,6 @@ class MovieChartViewController: UIViewController, UITableViewDelegate, UITableVi
         mainTableView.register(MovieRankTableViewCell.self, forCellReuseIdentifier: MovieRankTableViewCell.identifier)
         
     }
-
     @objc func findButtonClicked() {
         let alert = UIAlertController(title: "오 류", message: "8자리 이하로 입력해주세요", preferredStyle: .alert)
         let alert2 = UIAlertController(title: "오 류", message: "8자리로 입력해주세요\n 예시) 20240606", preferredStyle: .alert)
