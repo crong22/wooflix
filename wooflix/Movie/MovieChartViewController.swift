@@ -79,6 +79,7 @@ class MovieChartViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         
         
+        
         findButon.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(50)
             make.trailing.equalTo(-10)
