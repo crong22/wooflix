@@ -84,6 +84,7 @@ class MovieChartViewController: UIViewController, UITableViewDelegate, UITableVi
             make.height.equalTo(40)
         }
         
+        
         mainTableView.delegate = self
         mainTableView.dataSource = self
         mainTableView.register(MovieRankTableViewCell.self, forCellReuseIdentifier: MovieRankTableViewCell.identifier)
